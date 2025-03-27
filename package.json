@@ -1,5 +1,5 @@
 {
-  "name": "chat-app",
+  "name": "chat-fusion",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,6 @@
     "start": "npm run start --prefix backend"
   },
   "keywords": [],
-  "author": "",
+  "author": "Prem Sagar, Shivam, Kartik Jaswal",
   "license": "ISC"
 }
