@@ -2,10 +2,10 @@ import { THEMES } from "../constants";
 import { useThemeStore } from "../store/useThemeStore";
 
 const TEAM_MEMBERS = [
-  { name: "Prem Sagar", email: "premsagar1270@gmail.com", image: "./images/premsagar.jpg" },
-  { name: "Kartik Jaswal", email: "kr8219769@gmail.com", image: "/images/kartikjaswal.jpg" },
-  { name: "Shivam", email: "shivamrana2291@gmail.com", image: "/images/shivamrana.jpg" },
-  { name: "Prof. Amar Paul Singh", email: "singhamarpaul1@gmail.com", image: "/images/amarpaul.enc" },
+  { name: "Prem Sagar", email: "premsagar1270@gmail.com", image: "./images/premsagar.jpg", role: 'Student' },
+  { name: "Kartik Jaswal", email: "kr8219769@gmail.com", image: "/images/kartikjaswal.jpg", role: 'Student'},
+  { name: "Shivam", email: "shivamrana2291@gmail.com", image: "/images/shivamrana.jpg", role: 'Student' },
+  { name: "Prof. Amar Paul Singh", email: "singhamarpaul1@gmail.com", image: "/images/amarpaul.enc", role: 'Project Guide & Mentor' },
 ];
 
 const SettingsPage = () => {
@@ -53,6 +53,7 @@ const SettingsPage = () => {
               <div key={member.email} className="flex flex-col items-center text-center p-4 border rounded-lg">
                 <img src={member.image} alt={member.name} className="w-16 h-16 rounded-full object-cover" />
                 <h3 className="mt-2 font-medium">{member.name}</h3>
+                <p className="text-sm text-base-content/70">{member.role}</p> {/* 👈 Role added here */}
                 <p className="text-sm text-base-content/70">{member.email}</p>
               </div>
             ))}
